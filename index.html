@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient( rgb(71, 71, 237),rgb(46, 115, 199),rgb(86, 41, 146));
+
+}
+.img-slider{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    margin: 10px;
+    background: #1d2124;
+ 
+}
+ /* .img-slider .slide {
+    z-index: 1;
+   
+    width: 100%;
+    position: absolute;
+    /* clip-path: circle(0% at 0 50%); */
+    /* -webkit-clip-path: circle(0.3% at 0 51%);
+clip-path: circle(0% at 0 50%);
+
+}
+
+/* --------------------5 */
+/* .img-slider  .slide .active {
+    -webkit-clip-path: circle(150% at 0 50%);
+clip-path: circle(150% at 0 50%);
+    transition: 2s;
+    transition-property:clip-path;
+} */ 
+.img-slider .slide {
+  z-index: 1;
+  width: 100%;
+  position: absolute;
+  box-shadow: 0px 14px 60px black;
+  /* clip-path: circle(0% at 50% 50%); */
+
+  /* -webkit-clip-path: circle(0% at 0 50%); */
+clip-path: circle(0% at 0 50%);
+}
+
+.img-slider .slide.active {
+  /* clip-path: circle(100% at 50% 50%); */
+  /* -webkit-clip-path: circle(150% at 0% 50%); */
+clip-path: circle(150% at 30% 150%);
+  transition: 2s;
+  transition-property: clip-path;
+}
+
+.img-slider .slide img{
+    z-index: 1;
+    width: 100%;
+    border-radius: 5px;
+} img{
+    height: 500px;
+    box-shadow: 6px 10px 60px black;
+    border-radius: 30px;
+}
+.img-slider .slide .info{
+    position: absolute;
+    top: 0;
+    padding: 15px 30px;
+}
+.img-slider .slide .info h1{
+    color: #fff;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 800px;
+        letter-spacing: 2;
+        margin-left: 100px;
+}
+
+  .info p{
+    color: #fff;
+    background-color:#1d2128;
+  opacity: 0.5;
+    font-size: 16px;
+    margin-top: 60px;
+    width: 60%;
+    padding: 10px;
+        border-radius: 4px;
+
+}
+
+.img-slider  .navigation{
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    bottom: 30px;
+    left:50%;
+    transform: translateX(-50%);
+}
+.img-slider .navigation .btn{
+    background: rgba(255,255,255,0.5);
+    width: 12px;
+    height: 12px;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.img-slider  .navigation .btn.active{
+    background: #2696e9;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+@media(max-width:820px){
+    .img-slider{
+        width: 600px;
+        height: 375px;
+    }
+.img-slider .slide .info{
+padding: 10px 25px;
+}
+.img-slider .slide .info h2{
+font-size: 35px;
+}
+.img-slider .slide .info p{
+    width: 70%;
+font-size: 15px;
+
+}
+.img-slider .navigation {
+    bottom: 25px;
+}
+.img-slider .navigation btn{
+    width: 10px;
+    margin: 8px;
+    height: 10px;
+}
+
+}
+/* ---4 */
+@media(max-width:420px){
+    .img-slider{
+        width: 320px;
+        height: 200px;
+    }
+.img-slider .slide .info{
+padding: 5px 10px;
+}
+.img-slider .slide .info h2{
+font-size: 25px;
+}
+.img-slider .slide .info p{
+    width: 90%;
+font-size: 11px;
+
+}
+.img-slider .navigation {
+    bottom: 10px;
+}
+
+
+}
+/* -------------------5 */
+@media(max-width:620px){
+    .img-slider{
+        width: 400px;
+        height: 250px;
+    }
+.img-slider .slide .info{
+padding: 10px 20px;
+}
+.img-slider .slide .info h2{
+font-size: 30px;
+}
+.img-slider .slide .info p{
+    width: 80%;
+font-size: 14px;
+
+}
+.img-slider .navigation {
+    bottom: 15px;
+}
+.img-slider .navigation btn{
+    width: 8px;
+    margin: 6px;
+    height: 8px;
+}
+
+}
+</style>
+<body>
+<div class="img-slider">
+    <div class="slide active">
+        <img src="./img/photo-1611594177537-2372c10257d4.jpeg" alt="" height="400px">
+        <div class="info">
+            <h1>Slide One</h1>
+            <p>Lorem ipsum dolor sit amet consectetur
+                 adipisicing elit. Nisi enim volupta
+                 tibus qui? Unde sapiente di
+                 stinctio temp
+                oribus id? Providen
+                t, dolores aliquid!</p>
+        </div>
+    </div>
+    <!-- -----2 -->
+    <div class="slide  ">
+        <img src="./img/nycc-marquee-1778x1000.webp" alt=""  height="400px">
+        <div class="info">
+            <h1>Slide Two</h1>
+            <p>Lorem ipsum dolor sit amet consectetur
+                 adipisicing elit. Nisi enim volupta
+                 tibus qui? Unde sapiente di
+                 stinctio temp
+                oribus id? Providen
+                t, dolores aliquid!</p>
+        </div>
+    </div>
+    <!-- --------3 -->
+    <div class="slide">
+        <img src="./img/photo-1611594177537-2372c10257d4.jpeg" alt=""  height="400px">
+        <div class="info">
+            <h1>Slide Three</h1>
+            <p>Lorem ipsum dolor sit amet consectetur
+                 adipisicing elit. Nisi enim volupta
+                 tibus qui? Unde sapiente di
+                 stinctio temp
+                oribus id? Providen
+                t, dolores aliquid!</p>
+        </div>
+    </div>
+    <!-- ---------4 -->
+    <div class="slide">
+        <img src="./img/Downtown_Oklahoma_City_skyline_at_twilight.jpg" alt="" height="400px">
+        <div class="info">
+            <h1>Slide Four</h1>
+            <p>Lorem ipsum dolor sit amet consectetur
+                 adipisicing elit. Nisi enim volupta
+                 tibus qui? Unde sapiente di
+                 stinctio temp
+                oribus id? Providen
+                t, dolores aliquid!</p>
+        </div>
+    </div>
+    <!-- ------------5 -->
+    <div class="slide ">
+        <img src="./img/brooklyn-bridge-for-american-city-background-tbk9k162vos4yyry.jpg" alt="" height="400px">
+        <div class="info">
+            <h1>Slide Five</h1>
+            <p>Lorem ipsum dolor sit amet consectetur
+                 adipisicing elit. Nisi enim volupta
+                 tibus qui? Unde sapiente di
+                 stinctio temp
+                oribus id? Providen
+                t, dolores aliquid!</p>
+        </div>
+    </div>
+    <div class="slide  ">
+        <img src="./img/nycc-marquee-1778x1000.webp" alt=""  height="400px">
+        <div class="info">
+            <h1>Slide Six</h1>
+            <p>Lorem ipsum dolor sit amet consectetur
+                 adipisicing elit. Nisi enim volupta
+                 tibus qui? Unde sapiente di
+                 stinctio temp
+                oribus id? Providen
+                t, dolores aliquid!</p>
+        </div>
+    </div>
+    <div class="slide  ">
+        <img src="./img/stock-photo-chicago-river-view.jpeg" alt=""  height="400px">
+        <div class="info">
+            <h1>Slide Six</h1>
+            <p>Lorem ipsum dolor sit amet consectetur
+                 adipisicing elit. Nisi enim volupta
+                 tibus qui? Unde sapiente di
+                 stinctio temp
+                oribus id? Providen
+                t, dolores aliquid!</p>
+        </div>
+    </div>
+    <div class="slide  ">
+        <img src="./img/1337743.jpg" alt=""  height="400px">
+        <div class="info">
+            <h1>Slide Six</h1>
+            <p>Lorem ipsum dolor sit amet consectetur
+                 adipisicing elit. Nisi enim volupta
+                 tibus qui? Unde sapiente di
+                 stinctio temp
+                oribus id? Providen
+                t, dolores aliquid!</p>
+        </div>
+    </div>
+    <div class="navigation">
+        <div class="btn active"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+    </div>
+</div>
+
+
+
+
+
+    <script type="text/javascript" src="./main.js">
+
+
+// son
+
+// -------------------son
+
+
+    </script>
+</body>
+</html>
